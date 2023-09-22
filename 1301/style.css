@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+header {
+    align-items: center;
+    /*Code von ChatGPT*/
+    justify-content: center;
+    /*Code von ChatGPT*/
+    background-color: rgb(230, 240, 255);
+    height: 50px;
+    padding: 10px;
+}
+
+.hauptbereich {
+    background-color: rgb(230, 240, 255);
+}
+
+.bild {
+    max-width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.kursbereiche {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 120px);
+    /* 100px Bildbreite + 10px linker Abstand */
+}
+
+.kursbereiche {
+    height: 100%;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: rgb(230, 240, 255);
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+
+}
