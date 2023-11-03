@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Movie App</title>
+    <link href="./Style.css"  rel="stylesheet" />
+    @Styles.Render("./Content/css")
+    @Scripts.Render("./bundles/modernizr")
+
+</head>
+<body>
+    <header>
+        <h1>Aktuelle Kurse zu Währungen</h1>
+
+    </header>
+    <div class="blue"></div>
+
+    <div class="hauptbereich">
+
+        <div class="kurs">
+           
+
+
+            <div class="kurswerte">
+
+                @RenderBody()
+
+            </div>
+
+        </div>
+
+        <div class="bildformat">
+
+            <div class="bild">
+                <img src="~/chart-1905224_1280.jpg" width="auto" height="240"/>
+                <p>
+                    Bild von <a href="https://pixabay.com/de/users/pix1861-468748/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1905224">
+                        Csaba
+                        Nagy
+                    </a> auf <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1905224">Pixabay</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="blue"></div>
+
+   
+        <footer>
+            Koch Liam Gideon<br>
+            <a href="mailto:L.Koch.inf22@stud.bbbaden.ch">L.Koch.inf22@stud.bbbaden.ch</a>
+        </footer>
+    
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            align-items: center;
+            /*Code von ChatGPT*/
+            justify-content: center;
+            /*Code von ChatGPT*/
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+            padding: 10px;
+        }
+
+        .hauptbereich {
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            height: 40%;
+            width: 100%;
+        }
+
+        .bild {
+            width: 80%;
+            height: 50%;
+            vertical-align: center;
+        }
+
+        .bildformat {
+            display: grid;
+            /*Code von ChatGPT*/
+            place-items: center;
+            /*Code von ChatGPT*/
+            float: right;
+            width: 35%;
+            height: 500px;
+        }
+
+        .kurs {
+            display: flex;
+            /*Code von ChatGPT*/
+            flex-direction: column;
+            /*Code von ChatGPT*/
+            justify-content: center;
+            /*Code von ChatGPT*/
+            align-items: center;
+            /*Code von ChatGPT*/
+            place-items: center;
+            float: left;
+            height: 600px;
+            width: 40%;
+        }
+
+
+
+        .kurswerte {
+            text-align: center;
+            vertical-align: middle;
+            background-color: rgb(102, 102, 102);
+            height: 15%;
+            width: 80%;
+        }
+
+        .blue {
+            background-color: blue;
+            height: 1px;
+            width: 100%;
+        }
+
+        footer {
+            bottom: 0;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            height: 10%;
+        }
+
+        h1 {
+            text-align: center;
+            align-items: center;
+        }
+
+
+    </style>
+</body>
+
+
+
+    
+  

@@ -1,0 +1,82 @@
+﻿body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    align-items: center;
+    /*Code von ChatGPT*/
+    justify-content: center;
+    /*Code von ChatGPT*/
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    padding: 10px;
+}
+
+.hauptbereich {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    height: 700px;
+    width: 100%;
+}
+
+.bild {
+    width: 80%;
+    height: 560;
+    vertical-align: center;
+}
+
+.bildformat {
+    display: grid;
+    /*Code von ChatGPT*/
+    place-items: center;
+    /*Code von ChatGPT*/
+    float: right;
+    width: 35%;
+    height: 500px;
+}
+
+.kurs {
+    display: flex;
+    /*Code von ChatGPT*/
+    flex-direction: column;
+    /*Code von ChatGPT*/
+    justify-content: center;
+    /*Code von ChatGPT*/
+    align-items: center;
+    /*Code von ChatGPT*/
+    place-items: center;
+    float: left;
+    height: 600px;
+    width: 40%;
+}
+
+
+
+.kurswerte {
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(102, 102, 102);
+    height: 500px;
+    width: 80%;
+}
+
+.blue {
+    background-color: blue;
+    height: 1px;
+    width: 100%;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
+}
